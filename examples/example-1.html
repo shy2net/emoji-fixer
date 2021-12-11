@@ -1,0 +1,27 @@
+<html>
+
+<head></head>
+
+<body>
+  <h2>Here are some emojis:</h2>
+  <ul>
+    <li>
+      <h3>🛠️ Look at this tools!</h3>
+    </li>
+    <li>
+      <h3>😂It's funny, I smile in grayscale!</h3>
+    </li>
+
+    <li><input id="fixEmojisBtn" type="button" value="Fix emojis" /></li>
+  </ul>
+
+  <script type="module">
+    import fixEmojis from '../dist/index.js';
+
+    document.querySelector('#fixEmojisBtn').addEventListener('click', () => {
+    fixEmojis('body');
+    });
+  </script>
+</body>
+
+</html>

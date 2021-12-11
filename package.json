@@ -1,0 +1,18 @@
+{
+  "name": "emoji-fixer",
+  "version": "0.0.1",
+  "description": "A simple lightweight library which fixes uncolored emojis (black and white) caused in headline tags and bold fonts",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc -p .",
+    "prepublish": "npm run build"
+  },
+  "repository": "https://github.com/shy2net/emoji-fixer",
+  "author": "shynet",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.3"
+  }
+}
