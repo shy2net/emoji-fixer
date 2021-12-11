@@ -1,6 +1,6 @@
 # Emoji-Fixer
 
-This lightweight javascript library allows you to fix emojis that appear without any "color" because of bold 'font-weight' css property.
+This lightweight javascript library allows you to fix emojis that appear without any "color" (black and white) because of bold 'font-weight' css property.
 
 ## Example of emoji fixing
 
@@ -16,21 +16,44 @@ After the `emoji-fixer` library:
 
 You can have a look at the `examples` directory to see an example of using this library.
 
-### Importing this library via CDN
-Simply add the following code the bottom of your HTML body tag:
+### Using this library as a node_module (for webpack)
 
-```html
-<script src="https://cdn.jsdelivr.net/npm/emoji-fixer/dist/index.js"></script>
+Simply install the library:
+
+```bash
+$ npm install emoji-fixer
 ```
 
 After that you can simply add the following line of code to fix all emojis for your `body` tag:
 
-```html
-<script type="module">
-    // Import the emoji-fixer lib
-    const fixEmojis = require('emoji-fixer').default;
+```javascript
+// Import the emoji-fixer lib
+const fixEmojis = require('emoji-fixer').default;
 
-    // Fixes all of the emojis for the entire document
-    fixEmojis('body');
+// Fixes all of the emojis for the entire document
+fixEmojis('body');
+```
+
+### Using this library in your HTML\Javascript directly
+
+Method 1:
+
+```javascript
+// Import the emoji-fixer lib
+import fixEmojis from 'https://cdn.jsdelivr.net/npm/emoji-fixer/dist/index.js';
+
+// Fixes all of the emojis for the entire document
+fixEmojis('body');
+```
+
+Method 2:
+
+```html
+<script type="text/javascript">
+    // Import the emoji-fixer lib async
+    import('https://cdn.jsdelivr.net/npm/emoji-fixer/dist/index.js').then(fixEmojis => {
+        // Fixes all of the emojis for the entire document
+        fixEmojis.default('body');
+    });
 </script>
 ```
