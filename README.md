@@ -1,6 +1,8 @@
 # Emoji-Fixer
 
-This lightweight javascript library allows you to fix emojis that appear without any "color" (black and white) because of bold 'font-weight' css property.
+This lightweight javascript library allows you to fix emojis that appear without any color (black and white) because of bold 'font-weight' css property.
+
+This "bug" only takes affect on Windows operation systems.
 
 ## Example of emoji fixing
 
@@ -40,7 +42,7 @@ Method 1:
 
 ```javascript
 // Import the emoji-fixer lib
-import fixEmojis from 'https://cdn.jsdelivr.net/npm/emoji-fixer/dist/index.js';
+import fixEmojis from 'https://cdn.jsdelivr.net/npm/emoji-fixer';
 
 // Fixes all of the emojis for the entire document
 fixEmojis('body');
@@ -51,7 +53,7 @@ Method 2:
 ```html
 <script type="text/javascript">
     // Import the emoji-fixer lib async
-    import('https://cdn.jsdelivr.net/npm/emoji-fixer/dist/index.js').then(fixEmojis => {
+    import('https://cdn.jsdelivr.net/npm/emoji-fixer').then(fixEmojis => {
         // Fixes all of the emojis for the entire document
         fixEmojis.default('body');
     });
