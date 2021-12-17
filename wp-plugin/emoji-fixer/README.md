@@ -5,5 +5,5 @@ will be released when it will be fully working.
 
 ## What it is currently fixes?
 
-In the current stage it only fixes heading selectors (h1,h2,h3,h4,h5,h6).
+In the current stage it only fixes heading selectors (h1,h2,h3,h4,h5,h6,p).
 You can modify it to fix on any tag and selector you would like.
